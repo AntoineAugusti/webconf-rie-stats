@@ -5,10 +5,6 @@ import requests
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
-GITHUB_API = "https://api.github.com"
-REPO = "etalab/schema.data.gouv.fr"
-PHASES = ["construction", "investigation"]
-
 
 def requests_retry_session(
     retries=5,
