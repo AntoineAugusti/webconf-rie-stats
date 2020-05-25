@@ -45,7 +45,7 @@ hourly_data = {
     "nb_participants": data["part"],
 }
 
-with open("data.csv", "a") as f:
+with open("data/data.csv", "a") as f:
     writer = csv.DictWriter(f, hourly_data, lineterminator="\n")
     if f.tell() == 0:
         writer.writeheader()
