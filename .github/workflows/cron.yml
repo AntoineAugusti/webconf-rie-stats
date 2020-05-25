@@ -34,3 +34,8 @@ jobs:
         git commit -m "Update data"
     - name: Push changes
       run: git push origin master
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./data
