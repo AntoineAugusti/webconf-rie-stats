@@ -41,3 +41,4 @@ jobs:
         publish_dir: ./data
         user_name: 'actions-user'
         user_email: 'actions@github.com'
+        force_orphan: true
