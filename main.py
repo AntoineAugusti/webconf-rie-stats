@@ -29,7 +29,7 @@ def requests_retry_session(
     return session
 
 
-r = requests_retry_session().get("https://webconf.numerique.gouv.fr/stats/homePage")
+r = requests_retry_session().get("https://webconf.numerique.gouv.fr/stats/homePage", verify=False)
 r.raise_for_status()
 data = r.json()
 
